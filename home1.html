@@ -1,0 +1,372 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kindergarten Website </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="javascript" href="./Script.js">
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="#" class="logo"><i class="fas fa-child"></i> <span>Kids Zone</span></a>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <strong>
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#features"><i class="fas fa-star"></i> Features</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#services"><i class="fas fa-rocket"></i> Services</a>
+                <a href="#teacher"><i class="fas fa-chalkboard-teacher"></i> Teacher</a>
+                <a href="#pricing"><i class="fas fa-tags"></i> Pricing</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </strong>
+        </nav>
+    </header>
+</div>
+
+
+
+<section class="home background" id="home">
+    <div class="floating-text"></div>
+    <div class="content">
+        <h1>Welcome to Kids Zone</h1>
+        <h2>Let Your Child Shine Brightly!.</h2> 
+        <p><strong>It is a preschool educational approach based on playing, singing, 
+            practical activities such as drawing,and social interaction as 
+            part of the transition from home to school.</strong></p>
+        <a href="#about" class="btn">About Us</a>
+    </div>
+       
+</section>
+<div class="bird bird-1"></div>
+<div class="bird bird-2"></div>	  
+<div class="bird bird-3"></div>
+<div class="bird bird-4"></div>
+<div class="bird bird-5"></div>
+<div class="bird bird-6"></div>
+
+<section class="features up-and-down" id="features">
+
+    <div class="box-container">
+
+        <h3 class="title">why childrens love us</h3>
+
+        <div class="box">
+            <img src="./images/nursery.jpg">
+            <div class="info">
+                <h3>funny conversations</h3>
+                <p>Nursery School uses current educational ideas and research to help guide and develop our programme!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/s1.jpg" width="100px" height="100px">
+            <div class="info">
+                <h3>Many activities</h3>
+                <p>Our high number of qualified teachers and educators support relationships and learning outcomes for children!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/AIM.jpg" alt="">
+            <div class="info">
+                <h3>fun non-stop</h3>
+                <p>Our high number of qualified teachers and educators support relationships and learning outcomes for children!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <img class="stick" src="" alt="">
+
+    <div class="box-container">
+
+        <h3 class="title">why parents choose us</h3>
+
+        <div class="box">
+            <img src="./images/main page background.jpg" alt="">
+            <div class="info">
+                <h3>Continuous monitoring</h3>
+                <p>Our high number of qualified teachers and educators support relationships and learning outcomes for children!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/program.png" alt="">
+            <div class="info">
+                <h3>Professionalism teachers</h3>
+                <p>Our high number of qualified teachers and educators support relationships and learning outcomes for children!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/Importance-of-sports-1.jpg" alt="">
+            <div class="info">
+                <h3>Developed programs</h3>
+                <p>Our high number of qualified teachers and educators support relationships and learning outcomes for children!</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about background" id="about">
+
+    <div class="content"> 
+            <h3>a word about us</h3>
+            <p>At Kindergarten Website, we believe in nurturing young minds through playful learning 
+            and creative exploration.</p> 
+            <p>Our mission is to provide a safe, joyful, and stimulating environment where children can grow academically, socially, and emotionally.</p>
+            <p> We focus on interactive teaching methods that blend play, imagination, and curiosity to lay a strong foundation for lifelong learning.</p>
+            <p>Our aim is to help children build confidence, develop essential skills, and discover their unique potential. Through fun activities, caring guidance, and meaningful experiences, we ensure every child is ready to soar towards a bright future with joy and excitement.</p>
+            <a href="#" class="btn">learn more</a>
+    </div>
+
+</section>
+
+<section class="services up-and-down" id="services">
+
+    <h1 class="heading"> what we teach your childrens </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="./images/Teacher.jpg" alt="">
+            <div class="info">
+                <button class="btn" onclick="playSong('numbers')">Play Numbers Song</button>
+        <audio id="numbers-song" src="./images/Numbers Song.mp3"></audio>
+        <button class="btn" onclick="stopSong()">Stop Music</button>
+                <h3>Words and letters teaching</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/Clay.jpg" alt="">
+            <div class="info">
+                <h3>Clay and crafting</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/Drawing.jpg" alt="">
+            <div class="info">
+                <h3>Drawing classes</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/English.jpg" alt="">
+            <div class="info">
+                <button class="btn" onclick="playSong('alphabet')">Play Alphabet Song</button>
+                <audio id="alphabet-song" src="./images/Alphabets A to Z.mp3"></audio>
+                <button class="btn" onclick="stopSong()">Stop Music</button>
+                <h3>English classes</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/Game.jpg" alt="">
+            <div class="info">
+                <button class="btn" onclick="playSong('rhymes')">Play Rhymes Song</button>
+                <audio id="rhymes-song" src="./images/Rhymes.mp3"></audio>
+                <button class="btn" onclick="stopSong()">Stop Music</button>
+                <h3>playground for childrens</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./images/Sports.jpg" alt="">
+            <div class="info">
+                <h3>sports events</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="teacher background" id="teacher">
+
+    <h1 class="heading">our amazing teachers</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./images/uday.jpg" width="300px" height="300px">
+            <h3>Uday Kumar</h3>
+            <span>Incharge</span>
+            <div class="share">3
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+			<p>Our training mechanism is designed to arm teachers with practical and effective techniques,which are best suited for kids.</p>
+		</div>
+
+        <div class="box">
+            <img src="./images/nithisha.jpg" alt="">
+            <h3>Nithisha</h3>
+            <span>teacher</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <p>Our training mechanism is designed to arm teachers with practical and effective techniques,which are best suited for kids.</p>
+		</div>
+
+        <div class="box">
+            <img src="images/arun1.jpg" width="300px" height="300px">
+            <h3>Arunteja</h3>
+            <span>teacher</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+			<p>Our training mechanism is designed to arm teachers with practical and effective techniques,which are best suited for kids.</p>
+		</div>
+    </div>
+
+</section>
+
+<section class="pricing up-and-down" id="pricing">
+
+    <h1 class="heading">our pricing plans</h1>
+
+    <div class="box-container">
+
+        <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
+            <h3>weekly</h3>
+            <div class="price">Rs. 500</div>
+            <p> Smartphone-friendly Content service	Unlimited support Weekly Test Smartphone-friendly Content service	Unlimited support Weekly Test Weekly Test</p> 
+			<a href="#" class="btn">select plan</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg2.png) no-repeat;">
+            <span class="choise">best <br> choise</span>
+            <h3>monthly</h3>
+            <div class="price">Rs. 1500</div>
+            <p> Smartphone-friendly Content service	Unlimited support Weekly Training Montly Test Smartphone-friendly Content service	Unlimited support Weekly Test</p> 
+			<a href="#" class="btn">select plan</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg3.png) no-repeat;">
+            <h3>yearly</h3>
+            <div class="price">Rs. 20000</div>
+            <p> Smartphone-friendly Content service	Unlimited support Montly Test Daily Report Smartphone-friendly Content service	Unlimited support Weekly Test</p> 
+			<a href="#" class="btn">select plan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact background" id="contact">
+
+    <div class="row">
+
+        <div class="contact-info">
+
+            <div class="box">
+                <h3 class="title"> contact details</h3>
+                <p> <i class="fas fa-map-marker-alt"></i>Hyderbad , india </p>
+                <p> <i class="fas fa-envelope"></i> udaysai@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> +91-6303538168 </p>
+            </div>
+
+            <div class="box">
+                <h3 class="title">follow us</h3>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">newsletter</h3>
+               <form action="">
+                   <input type="email" placeholder="Enter your email">
+                   <input type="submit" class="btn" value="send">
+               </form>
+            </div>  
+        </div>
+        
+        <form action="Main.html" class="contact-form">
+                 <h3>contact us</h3>
+                 <form action="send_email.php" method="POST">
+           Name: <input type="text" placeholder="Name" class="box" required>
+           Email:<input type="email" placeholder="Email" class="box" required>
+           Subject: <input type="text" placeholder="text" class="box" required>
+           Message: <textarea placeholder="Message.." class="box message" name="" id="" cols="30" rows="10" required></textarea>
+            <input type="submit"  class="btn" value="send message">
+        </form>
+    </div>
+
+</section>
+
+<div class="footer">
+    Coded by <span> The Learning Group10 </span> !
+</div>
+<script> 
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+let currentAudio = null;
+
+    function playSong(type) {
+        // Stop any currently playing audio
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+        // Select the audio based on the type
+        const audioMap = {
+            numbers: document.getElementById('numbers-song'),
+            alphabet: document.getElementById('alphabet-song'),
+            rhymes: document.getElementById('rhymes-song')
+        };
+
+        currentAudio = audioMap[type];
+
+        // Play the selected audio
+        if (currentAudio) {
+            currentAudio.play();
+        }
+    }
+
+    function stopSong() {
+        // Stop the currently playing audio
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            currentAudio = null;
+        }
+    }
+    
+    
+</script>
+
+</body>
+</html>

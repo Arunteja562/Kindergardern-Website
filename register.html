@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background: linear-gradient(to right, #f8fc25, #11cb7e);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .background .shape {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .background .shape:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 10%;
+        }
+
+        .background .shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 30%;
+            left: 70%;
+        }
+
+        .background .shape:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            bottom: 10%;
+            left: 40%;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;  /* Scrollable form */
+            max-height: 80vh;  /* Limits form height */
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            border-radius: 20px;
+            background-color: #2575fc;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d5edb;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .animated-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6f61;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .login-link {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .login-link a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            color: #1d5edb;
+        }
+
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #2575fc;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Kids Zone!</h1>
+    </header>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container">
+        <div class="animated-title">Register for Kids Zone</div>
+        
+            <div class="alert alert-info text-center"></div>
+        
+        <form method="POST">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" name="username" id="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" name="dob" id="dob" required>
+            </div>
+            <div class="mb-3">
+                <label for="mobile_number" class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" name="mobile_number" id="mobile_number" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" name="address" id="address" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+
+        <!-- Login Link -->
+        <div class="login-link">
+            <p>Already registered? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+            background: linear-gradient(to right, #58cb11, #25fc82);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-primary {
+            border-radius: 20px;
+            background: #2575fc;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #6a11cb;
+        }
+        .forgot-password {
+            text-align: right;
+            font-size: 0.9em;
+        }
+    
